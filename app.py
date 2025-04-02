@@ -7,11 +7,11 @@ st.set_page_config(page_title="Typeform API Viewer", layout="wide")
 st.title("🔍 Visualizador de Formularios Typeform")
 st.write("Consulta la estructura de un formulario desde la API de Typeform.")
 
-# Parámetros fijos
+# Parámetros del formulario
 form_id = "WD4lUnn8"
-token = "tfp_9sDQa5Ns2LeGtgxwiPp2hnYWsUcqnHG6Nv5VXbjmCXuR_e5CajswVJsC9"
+token = "tfp_EVXzJeuqw6XhrwLZ2EGnAWQNuoAsnPcpP9JUXr861iU8_3soNTw72AFXgdX"
 
-# Construcción de la URL y cabeceras
+# Construcción de la URL y headers
 url = f"https://api.typeform.com/forms/{form_id}"
 headers = {"Authorization": f"Bearer {token}"}
 
@@ -40,5 +40,5 @@ except requests.exceptions.HTTPError as e:
     st.code(e.response.text)
 
 except Exception as e:
-    st.error(f"❌ Ocurrió un error inesperado:")
+    st.error("❌ Ocurrió un error inesperado:")
     st.exception(e)
