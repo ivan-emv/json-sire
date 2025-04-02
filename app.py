@@ -9,7 +9,7 @@ st.write("Consulta la estructura de un formulario desde la API de Typeform.")
 
 # Parámetros del formulario
 form_id = "WD4lUnn8"
-token = "tfp_EVXzJeuqw6XhrwLZ2EGnAWQNuoAsnPcpP9JUXr861iU8_3soNTw72AFXgdX"
+token = "tfp_55452bBtWuMQPrbx18jXddv3BJ4N2H7y4iQ8QNpiv5eL_ep24hV6YZdJy"
 
 # Construcción de la URL y headers
 url = f"https://api.typeform.com/forms/{form_id}"
